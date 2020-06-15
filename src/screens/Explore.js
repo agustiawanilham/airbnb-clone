@@ -9,7 +9,8 @@ import {
   Image,
 } from 'react-native';
 import Icon from 'react-native-vector-icons/Ionicons';
-import ImageMini from './ImageMini';
+import ImageMini from '../components/ImageMini';
+import HomeComponent from '../components/HomeComponent';
 
 export default class Explore extends Component {
   render() {
@@ -101,6 +102,43 @@ export default class Explore extends Component {
                       paddingLeft: 30,
                     }}
                     source={require('../images/home.jpg')}
+                  />
+                </View>
+              </View>
+              <View style={{padding: 20}}>
+                <Text style={{fontSize: 20, padding: 10, fontWeight: '700'}}>
+                  Homes Around the World
+                </Text>
+                <View
+                  style={{
+                    flexDirection: 'row',
+                    flexWrap: 'wrap',
+                    justifyContent: 'space-between',
+                    marginTop: 10,
+                  }}>
+                  <HomeComponent
+                    imageUrl={require('../images/home.jpg')}
+                    title="PRIVATE ROOM - 2 BEDS"
+                    description={'The Cozy Room'}
+                    price={'1.250.000'}
+                  />
+                  <HomeComponent
+                    imageUrl={require('../images/restaurant.jpg')}
+                    title="PRIVATE ROOM - 2 BEDS"
+                    description={'Ruangan Bersama keluarga'}
+                    price={'2.000.000'}
+                  />
+                  <HomeComponent
+                    imageUrl={require('../images/home.jpg')}
+                    title="PRIVATE ROOM - 2 BEDS"
+                    description={'The Cozy Room'}
+                    price={'1.250.000'}
+                  />
+                  <HomeComponent
+                    imageUrl={require('../images/experiences.jpg')}
+                    title="PRIVATE ROOM - 2 BEDS"
+                    description={'The Cozy Room'}
+                    price={'1.250.000'}
                   />
                 </View>
               </View>
